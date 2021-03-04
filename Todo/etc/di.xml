@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+	
+	<preference for="SGS\Todo\Api\TaskManagementInterface" type="SGS\Todo\Service\TaskManagement" />
+	<preference for="SGS\Todo\Api\TaskRepositoryInterface" type="SGS\Todo\Service\TaskRepository" />
+	<preference for="SGS\Todo\Api\Data\TaskInterface" type="SGS\Todo\Model\Task" />
+	<preference for="SGS\Todo\Api\Data\TaskSearchResultInterface" type="SGS\Todo\Model\ResourceModel\Task\Collection" />
+	<preference for="SGS\Todo\Api\CustomerTaskListInterface" type="SGS\Todo\Service\CustomerTaskList" />
+	<preference for="SGS\Todo\Api\TaskStatusManagementInterface" type="SGS\Todo\Service\TaskStatusManagement" />
+</config>
