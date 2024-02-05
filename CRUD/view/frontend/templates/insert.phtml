@@ -1,0 +1,22 @@
+<div class="page-header">
+    <h1>Add new post</h1>
+</div>
+<form method="POST" action="<?php echo $block->getUrl('*/*/save')?>">
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" name="name" placeholder="Enter name">
+    </div>
+    <div class="form-group">
+        <label>URL key</label>
+        <input type="text" class="form-control" name="url_key" placeholder="Enter url key">
+    </div>
+    <div class="form-group">
+        <label>Content</label>
+        <input type="text" class="form-control" name="post_content" placeholder="Enter content">
+    </div>
+    <div class="form-group">
+        <label>Tags</label>
+        <input type="text" class="form-control" name="tags" placeholder="Enter tags">
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>
